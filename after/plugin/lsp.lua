@@ -61,3 +61,5 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
   }),
 })
+
+require('nvim-ts-autotag').setup()
