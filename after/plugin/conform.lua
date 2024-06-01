@@ -7,7 +7,7 @@ conform.setup({
 		javascriptreact = { { "prettierd", "prettier" }, { "eslint", "eslint_d" } },
 		typescriptreact = { { "prettierd", "prettier" }, { "eslint", "eslint_d" } },
 		svelte = { "prettierd" },
-		css = { "prettierd" },
+		css = { "cssls", "prettierd" },
 		html = { "prettierd" },
 		json = { "prettierd" },
 		yaml = { "prettierd" },

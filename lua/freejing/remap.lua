@@ -25,10 +25,33 @@ vim.keymap.set("n", "<leader>f", function()
 	vim.lsp.buf.format()
 end)
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+-- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+-- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+-- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+-- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>ef", "<cmd>EslintFixAll<CR>")
+
+vim.keymap.set("n", "<leader>vs", "<cmd>vsplit<CR>")
+vim.keymap.set("n", "<leader>hs", "<cmd>split<CR>")
+
+-- Move panes
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+-- Resize panes
+vim.keymap.set("n", "<C-S-h>", "<cmd>vertical resize +4<CR>")
+vim.keymap.set("n", "<C-S-l>", "<cmd>vertical resize -4<CR>")
+vim.keymap.set("n", "<C-S-k>", "<cmd>resize +4<CR>")
+vim.keymap.set("n", "<C-S-l>", "<cmd>resize -4<CR>")
+
+vim.keymap.set("v", "<leader>mf", ":'<,'>normal mf<CR>")
+-- vim.keymap.set("n", "<leader>rm", function()
+-- 	vim.cmd("normal mx")
+-- 	vim.schedule(function()
+-- 		vim.fn.feedkeys("rm -rf\n", "n")
+-- 	end)
+-- end)
