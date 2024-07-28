@@ -39,7 +39,7 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
 require("mason").setup({})
 require("mason-lspconfig").setup({
-	ensure_installed = { "tsserver", "eslint", "rust_analyzer", "tailwindcss", "cssls" },
+	ensure_installed = { "tsserver", "eslint", "rust_analyzer", "tailwindcss", "cssls", "terraformls" },
 	handlers = {
 		lsp_zero.default_setup,
 	},

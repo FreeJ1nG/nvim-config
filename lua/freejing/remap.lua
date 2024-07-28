@@ -43,10 +43,10 @@ vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- Resize panes
-vim.keymap.set("n", "<C-S-h>", "<cmd>vertical resize +4<CR>")
-vim.keymap.set("n", "<C-S-l>", "<cmd>vertical resize -4<CR>")
-vim.keymap.set("n", "<C-S-k>", "<cmd>resize +4<CR>")
-vim.keymap.set("n", "<C-S-l>", "<cmd>resize -4<CR>")
+vim.keymap.set("n", "<S-H>", "<cmd>vertical resize +4<CR>")
+vim.keymap.set("n", "<S-L>", "<cmd>vertical resize -4<CR>")
+vim.keymap.set("n", "<S-B>", "<cmd>resize +4<CR>")
+vim.keymap.set("n", "<S-T>", "<cmd>resize -4<CR>")
 
 vim.keymap.set("v", "<leader>mf", ":'<,'>normal mf<CR>")
 -- vim.keymap.set("n", "<leader>rm", function()
